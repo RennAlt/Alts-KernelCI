@@ -81,7 +81,8 @@ jobs:
 
         env:
           TOKEN: ${{ secrets.TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
+          CHAT_TOPIC: ${{ secrets.CHAT_TOPIC }}
+          TOPIC_ID2: ${{ secrets.TOPIC_ID2 }}
 
       - name: Post Update
         run: |
@@ -90,8 +91,8 @@ jobs:
 
         env:
           TOKEN: ${{ secrets.TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
           CHAT_TOPIC: ${{ secrets.CHAT_TOPIC }}
+          TOPIC_ID: ${{ secrets.TOPIC_ID }}
 
           
           
