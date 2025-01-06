@@ -67,7 +67,7 @@ jobs:
         run: |
           git config --global user.name "$GIT_USERNAME"
           git config --global user.email "$GIT_USER_EMAIL"
-          wget https://raw.githubusercontent.com/shenprjkt/Alts-KernelCI/main/Common/Dependency.sh
+          wget https://raw.githubusercontent.com/shenprjkt/Alts-KernelCI/mi8953/topic/Common/Dependency.sh
           bash Dependency.sh
 
         env:
@@ -76,7 +76,7 @@ jobs:
 
       - name: Build Kernel
         run: |
-          wget https://raw.githubusercontent.com/shenprjkt/Alts-KernelCI/main/Common/Build.sh
+          wget https://raw.githubusercontent.com/shenprjkt/Alts-KernelCI/mi8953/topic/Common/Build.sh
           bash Build.sh
 
         env:
@@ -85,13 +85,13 @@ jobs:
 
       - name: Post Update
         run: |
-          wget https://raw.githubusercontent.com/shenprjkt/Alts-KernelCI/main/Common/post.sh
+          wget https://raw.githubusercontent.com/shenprjkt/Alts-KernelCI/mi8953/topic/Common/post.sh
           bash post.sh
 
         env:
           TOKEN: ${{ secrets.TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-          CHAT_CH: ${{ secrets.CHAT_CH }}
+          CHAT_TOPIC: ${{ secrets.CHAT_TOPIC }}
 
           
           
