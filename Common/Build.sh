@@ -62,7 +62,7 @@ compile() {
 # Zipping
 zipping() {
     cd AnyKernel || exit 1
-    zip -r9 Alts-"${BRANCH}"-"${DEVICENAME}"-"${DATE}".zip ./*
+    zip -r9 Alts-"${DEVICENAME}"-"${DATE}".zip ./*
     cd ..
 }
 
