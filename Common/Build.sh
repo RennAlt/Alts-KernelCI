@@ -4,7 +4,7 @@
 git clone --recursive --depth=1 -j $(nproc) $REPO -b $BRANCH $KERNELNAME
 
 # Clone DTS
-git clone --recursive --depth=1 -j $(nproc) https://github.com/Alts-Project/kernel_devicetree_xiaomi-msm8953 -b no-camera/audio $KERNELNAME/arch/arm64/boot/dts/xiaomi-msm8953
+git clone --recursive --depth=1 -j $(nproc) https://github.com/Mi-Eldarion/kernel_devicetree-ysl-4.19 -b main $KERNELNAME/arch/arm64/boot/dts/vendor/qcom/ysl
 
 # Clone Techpack Mi8953
 git clone --recursive --depth=1 -j $(nproc) https://github.com/Alts-Project/kernel_techpack_ysl -b new-fts $KERNELNAME/techpack/mi8953
